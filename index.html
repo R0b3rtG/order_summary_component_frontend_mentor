@@ -1,225 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Order summary card</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<img class="hero" src="/images/illustration-hero.svg" alt="" />
+			<div class="text">
+				<h1>Order Summary</h1>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
-    <title>Frontend Mentor | Order summary card</title>
+				<p class="paragraph">
+					You can now listen to millions of songs, audiobooks, and podcasts on
+					any device anywhere you like!
+				</p>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+				<div class="plan">
+					<img src="./images/icon-music.svg" alt="" />
+					<div class="plan-2">
+						<h2 class="annual">Annual Plan</h2>
+						<h2 class="price">$59.99/year</h2>
+					</div>
+					<a class="change" href="#">Change</a>
+				</div>
 
-      .attribution{ 
-        font-size: 11px; text-align: center;
-      }
-      .attribution a{
-        color: hsl(228, 45%, 44%);
-      }
-
-      body{
-        font-family: 'Red Hat Display', sans-serif;
-        background: url('/images/pattern-background-desktop.svg') no-repeat;
-        background-color: hsl(225, 100%, 94%);
-        height: 100vh;
-        padding: 75px 0;
-      }
-
-      main{
-        height: 500px;
-        width: 330px;
-        border-radius: 15px;
-        background-color: #fff;
-        margin: auto;
-        margin-bottom: 4rem;
-        overflow: hidden;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .text{
-        padding: 1.5rem 2rem;
-      }
-
-      .text h1{
-        text-align: center;
-        margin: auto;
-        font-size: 1.4rem;
-        color: hsl(223, 47%, 23%);
-      }
-
-      .text p{
-        text-align: center;
-        font-size: .9rem;
-        color: hsl(224, 23%, 55%);
-        padding: 1.5rem 0;
-      }
-
-      main .hero{
-        width: 100%;
-      }
-
-      .plan{
-        background-color: hsl(225, 100%, 98%);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        justify-content: space-between;
-      }
-
-      .plan img{
-        margin-right: 1rem;
-      }
-
-      .plan .change{
-        color: hsl(245, 75%, 52%);
-        font-weight: 700;
-      }
-
-      .plan .change:hover{
-        text-decoration: none;
-        color: hsl(224, 23%, 55%);
-      }
-
-      .plan-2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-      }
-
-      .plan-2 .annual{
-        font-size: .9rem;
-        color: hsl(223, 47%, 23%);
-      }
-
-      .plan-2 .price{
-        font-size: .8rem;
-        color: hsl(224, 23%, 55%);
-      }
-
-      .btn{
-        margin: auto;
-        margin-top: 1rem;
-        display: block;
-        text-align: center;
-        background: hsl(245, 75%, 52%);
-        color: #fff !important;
-        text-decoration: none;
-        padding: .9rem;
-        border-radius: 7px;
-      }
-
-      .btn:hover{
-        background: hsl(224, 23%, 55%);
-      }
-
-      .cancel{
-        display: block;
-        text-align: center;
-        margin-top: 1rem;
-        text-decoration: none; 
-        color: hsl(224, 23%, 55%);
-        font-weight: 700;
-      }
-
-      .cancel:hover{
-        color: hsl(223, 47%, 23%);
-      }
-
-      /* ========================== Media Queries ======================= */
-      @media(max-width: 1100px){
-        main{
-          margin: 34% auto;
-        }
-      }
-
-      @media(max-width: 800px){
-        main{
-          margin: 23% auto;
-        }
-      }
-
-      @media(max-width: 550px){
-        main{
-          margin: 10% auto;
-        }
-      }
-
-      @media(max-width: 400px){
-        main{
-          margin: 10% auto;
-        }
-
-        .text{
-          padding: .7rem 2rem;
-        }
-
-        body{
-          padding: 30px 0 !important;
-        }
-      }
-
-      @media(max-width: 300px){
-        .text{
-          padding: .7rem .5rem ;
-        }
-
-        main{
-          width: 250px;
-          height: 450px;
-          margin: 2rem auto;
-        }
-
-        .plan-2 .annual{
-          font-size: .8rem;
-        }
-
-        .plan-2 .price{
-          font-size: .7rem;
-        }
-
-        .plan .change{
-        font-weight: 700;
-        font-size: .8rem;
-      }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <img class="hero" src="/images/illustration-hero.svg" alt="">
-      <div class="text">
-        <h1>Order Summary</h1>
-        
-        <p class="paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
-          
-          <div class="plan">
-            <img src="/images/icon-music.svg" alt="">
-            <div class="plan-2">
-              <h2 class="annual">Annual Plan</h2>
-              <h2 class="price">$59.99/year</h2>
-            </div>
-            <a class="change" href="#">Change</a>
-          </div>
-          
-          <a href="#" class="btn">Proceed to Payment</a>
-          <a href="#" class="cancel">Cancel Order</a>
-          
-        </div>
-      </main>
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Robert Iancu</a>.
-    </footer>
-  </body>
+				<a href="#" class="btn">Proceed to Payment</a>
+				<a href="#" class="cancel">Cancel Order</a>
+			</div>
+		</main>
+	</body>
 </html>

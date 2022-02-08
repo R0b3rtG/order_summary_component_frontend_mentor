@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background: url('./images/pattern-background-desktop.svg') repeat-x;
+	background-color: hsl(225, 100%, 94%);
+	height: 100vh;
+	padding: 75px 0;
+}
+
+main {
+	height: 500px;
+	width: 330px;
+	border-radius: 15px;
+	background-color: #fff;
+	margin: auto;
+	margin-bottom: 4rem;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+	padding: 1.5rem 2rem;
+}
+
+.text h1 {
+	text-align: center;
+	margin: auto;
+	font-size: 1.4rem;
+	color: hsl(223, 47%, 23%);
+}
+
+.text p {
+	text-align: center;
+	font-size: 0.9rem;
+	color: hsl(224, 23%, 55%);
+	padding: 1.5rem 0;
+}
+
+main .hero {
+	width: 100%;
+}
+
+.plan {
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+.plan img {
+	margin-right: 1rem;
+}
+
+.plan .change {
+	color: hsl(245, 75%, 52%);
+	font-weight: 700;
+}
+
+.plan .change:hover {
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+}
+
+.plan-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.plan-2 .annual {
+	font-size: 0.9rem;
+	color: hsl(223, 47%, 23%);
+}
+
+.plan-2 .price {
+	font-size: 0.8rem;
+	color: hsl(224, 23%, 55%);
+}
+
+.btn {
+	margin: auto;
+	margin-top: 1rem;
+	display: block;
+	text-align: center;
+	background: hsl(245, 75%, 52%);
+	color: #fff !important;
+	text-decoration: none;
+	padding: 0.9rem;
+	border-radius: 7px;
+}
+
+.btn:hover {
+	background: hsl(224, 23%, 55%);
+}
+
+.cancel {
+	display: block;
+	text-align: center;
+	margin-top: 1rem;
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	font-weight: 700;
+}
+
+.cancel:hover {
+	color: hsl(223, 47%, 23%);
+}
+
+/* ========================== Media Queries ======================= */
+@media (max-width: 1100px) {
+	main {
+		margin: 34% auto;
+	}
+}
+
+@media (max-width: 800px) {
+	main {
+		margin: 23% auto;
+	}
+}
+
+@media (max-width: 550px) {
+	main {
+		margin: 10% auto;
+	}
+}
+
+@media (max-width: 400px) {
+	main {
+		margin: 10% auto;
+	}
+
+	.text {
+		padding: 0.7rem 2rem;
+	}
+
+	body {
+		padding: 30px 0 !important;
+	}
+}
+
+@media (max-width: 300px) {
+	.text {
+		padding: 0.7rem 0.5rem;
+	}
+
+	main {
+		width: 250px;
+		height: 450px;
+		margin: 2rem auto;
+	}
+
+	.plan-2 .annual {
+		font-size: 0.8rem;
+	}
+
+	.plan-2 .price {
+		font-size: 0.7rem;
+	}
+
+	.plan .change {
+		font-weight: 700;
+		font-size: 0.8rem;
+	}
+}
