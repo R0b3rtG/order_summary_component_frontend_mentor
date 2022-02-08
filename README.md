@@ -1,6 +1,6 @@
 # Order Summary Component (Frontend Mentor)
 
-**Availability:[![Netlify Status](https://api.netlify.com/api/v1/badges/3d2c035d-c276-42fa-b560-8af821233ce4/deploy-status)](https://app.netlify.com/sites/r0b3rtg-order-summary-card/deploys)**
+**Availability: [![Netlify Status](https://api.netlify.com/api/v1/badges/3d2c035d-c276-42fa-b560-8af821233ce4/deploy-status)](https://app.netlify.com/sites/r0b3rtg-order-summary-card/deploys)**
 
 ---
 
